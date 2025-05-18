@@ -1,0 +1,255 @@
+/*Connection Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    /*Color*/
+    --mainColor: #2D2D35;
+    --additionalColor: #22242B;
+    --actionProjectColor: #C83636;
+    --headerColor: #E0E6F0;
+    --textColor: #D9D9D9;
+    --standardButtonBorderColor: #3F424A;
+    --standardButtonBackgroundColor: #24252B;
+    --backgroundTextProjectColor: #F9ECEC;
+}
+
+*{
+    font-family: 'Work Sans';
+}
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--textColor) !important;
+}
+body{
+    background: var(--mainColor) !important;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.content_zone{
+    margin: 15px 0px;
+}
+
+/*
+    HEADER MENU
+ */
+header{
+    background: var(--additionalColor);
+    height: 70px;
+}
+header *{
+    color: #ffffff;
+}
+header h1 {
+    margin-top: 13px;
+}
+header h1 a{
+    color: var(--textColor);
+    text-decoration: none;
+}
+header h1 a:hover{
+    color: #ffffff;
+}
+header ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li a{
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--textColor);
+    padding: 22px;
+}
+header ul li a:hover {
+    background: var(--standardButtonBorderColor);
+    transition: 0.5s;
+    color:#fff;
+}
+header ul li ul {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 180px;
+    display: none;
+    z-index: 111;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li {
+    width: 100%;
+}
+header ul li ul li a {
+    padding: 10px;
+    background: white;
+    color: #008489;
+}
+
+/*
+    SINGLE_POST
+ */
+.single_post{
+    margin-bottom: 30px;
+}
+.single_post .info{
+    margin: 20px 0;
+}
+.single_post .info i{
+    display: inline-block;
+    margin-right: 20px;
+}
+.single_post a{
+    text-decoration: underline;
+}
+.single_post a:hover{
+    text-decoration: none;
+    color: #008489;
+}
+/*
+FORMS
+ */
+.reg_form h2{
+    text-align: center;
+    margin: 30px 0;
+}
+.reg_form input{
+    height: 3.3rem;
+}
+.reg_form a {
+    font-size: 1.2em;
+    transition: all .3s;
+    color: #5c5b5b;
+    text-decoration: underline;
+    margin-left: 60px;
+}
+
+.reg_form a:hover {
+    margin-left: 55px;
+    transition: all .3s;
+}
+
+/*
+FORMS
+ */
+
+form div.err p {
+    color: red;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+/*
+SIDEBAR
+ */
+
+.sidebar{
+    margin: 1rem 0;
+    background: var(--additionalColor);
+    min-height: 600px;
+}
+
+.sidebar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: #d3d3d3;
+}
+
+.sidebar ul a{
+    padding: 18px;
+    display: block;
+    border-bottom: 1px solid #fff;
+    color: var(--textColor);
+}
+
+.sidebar ul a:hover{
+    padding-left: 10px;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.posts{
+    height: 100%;
+    padding: 40px 100px 100px;
+}
+
+.posts h2{
+    text-align: center;
+    margin: 2rem 0 1rem 0.4rem;
+}
+
+.posts .title-table div{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+    font-weight: 700;
+}
+
+.posts .post div{
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+}
+.posts .post .red a{
+    text-decoration: none;
+    color: var(--actionProjectColor);
+}
+.posts .post .del a{
+    color:  var(--actionProjectColor);
+    text-decoration: none;
+}
+.posts .post .id{
+    font-weight: bold;
+}
+
+/*.add-post form div{
+    margin: 2rem 0;
+}*\
+
+/*
+error msg
+ */
+.add-post .err{
+    padding: 1rem 0;
+    margin: 0px 10px;
+    color: #A52A2A;
+}
+.add-post .err ul{
+    list-style-type: none;
+    color: #A52A2A;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+
+/*Переопределение*/
+.text{
+    color: var(--textColor) !important;
+}
+.green-btn{
+    color: var(--textColor) !important;
+    background: hwb(152 7% 64%) !important;
+    border-color: hwb(152 7% 64%) !important;
+}
+.edit-btn{
+    background: #ddae20 !important;
+    border-color: #ddae20 !important;
+}
+.input-new{
+    background: var(--standardButtonBackgroundColor) !important;
+    color: var(--textColor) !important;
+    border-color: var(--standardButtonBorderColor) !important;
+}
